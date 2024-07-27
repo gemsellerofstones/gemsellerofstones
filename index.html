@@ -10,9 +10,12 @@
             background: #000000 url("https://cdnjs.cloudflare.com/ajax/libs/minicss/3.0.5/flavors/mini-nord.min.css") center;
             color: #00FF00;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            width: 800px;
+            max-width: 800px;
+            width: 95%;
             margin: 0 auto;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
@@ -21,25 +24,32 @@
         }
         .links {
             margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .links a {
             color: #FFFF00;
-            margin: 0 10px;
+            margin: 5px 10px;
             text-decoration: none;
-            font-size: 24px;
+            font-size: clamp(18px, 4vw, 24px);
             font-weight: bold;
         }
         .image {
             margin: 20px 0;
         }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
         .counter {
-            font-size: 36px;
+            font-size: clamp(24px, 5vw, 36px);
             margin: 20px 0;
         }
         button {
-            font-size: 24px;
+            font-size: clamp(18px, 4vw, 24px);
             padding: 5px 15px;
-            margin: 0 10px;
+            margin: 5px 10px;
             background-color: #00FFFF;
             border: 3px solid #FF00FF;
             color: #000000;
@@ -55,20 +65,21 @@
             padding: 20px;
             border: 5px solid #00FFFF;
             border-radius: 15px;
-            font-size: 24px;
+            font-size: clamp(16px, 4vw, 24px);
             display: none;
+            max-width: 80%;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="links">
-            <a href="https://x.com/sellerofgemston" target=”_blank”>gemstone witter</a>
-            <a href="https://pump.fun/3Hr3LBzGBeoPSQS7ghbE7hKocs2ArbeWeaqckUgYpump" target=”_blank”>buy gemstones</a>
+            <a href="https://x.com/sellerofgemston" target="_blank">gemstone witter</a>
+            <a href="https://pump.fun/3Hr3LBzGBeoPSQS7ghbE7hKocs2ArbeWeaqckUgYpump" target="_blank">buy gemstones</a>
         </div>
         <p>3Hr3LBzGBeoPSQS7ghbE7hKocs2ArbeWeaqckUgYpump</p>
         <div class="image">
-            <img src="https://pbs.twimg.com/media/GTdhjrhWIAA2jsL?format=jpg&name=medium" width="400" height="320">
+            <img src="https://pbs.twimg.com/media/GTdhjrhWIAA2jsL?format=jpg&name=medium" alt="Gemstone image">
         </div>
         <div class="counter">
             <h2>Gemstone Counter</h2>
